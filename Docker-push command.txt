@@ -1,0 +1,29 @@
+sudo usermod -aG docker $USER
+
+pushing image to DockerHub
+>docker images
+*pull a sample image if dont have on host
+>docker pull ubuntu
+check with
+>docker images
+*To create container out of it
+>docker run -it -d ubuntu
+*check
+>docker ps -a
+*to log onto that container of that image
+>docker exec -it (container id) bash
+>#ls or ps -a
+*create a sample directory
+>mkdir ultra-directory
+>ls or ps -a
+>exit
+>docker ps -a
+>docker commit (container id) username(numanshoeb) of Dockerhub/legend-image-123:2
+>docker ps
+>docker push (image name)
+>docker login
+>username:numanshoeb@gmail.com
+>password:Emirates@123
+*try again
+>docker push (image name)
+*Go to dockerhub & refresh the repo page to see image pushed.
