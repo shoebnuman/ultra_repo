@@ -1,0 +1,17 @@
+Desktop/
+>mkdir dockerfile
+>cd dockerfile
+>touch dockerfile
+>vim dockerfile
+press i to go onto insert mode
+FROM UBUNTU or SCRATCH
+MAINTAINER shoeb numan
+RUN apt-get update
+CMD ["echo", "Hello world...! from my first custom docker image"]
+press esc then :wq! press enter
+>cat dockerfile
+*go to dockerfile location then
+>docker build -t customimage1:1.0 .
+* wait and check with
+>docker images
+>docker run image ID 
